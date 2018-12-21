@@ -9,59 +9,86 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="container header">
-        <nav class="main-nav">
-            <ul class="main-nav__list">
-                <li class="main-nav__item"><a href="#" class="main-nav__link">Home</a></li>
-                <li class="main-nav__item"><a href="#" class="main-nav__link">PhotoApp</a></li>
-                <li class="main-nav__item"><img src="images/logo.png" alt="logo"></li>
-                <li class="main-nav__item"><a href="#" class="main-nav__link">Design</a></li>
-                <li class="main-nav__item"><a href="#" class="main-nav__link">Download</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1 class="hero__title">Your life, a photo</h1>
-            <h3 class="hero__subtitle">print your life in a simple photo</h3>
-            <button class="button">Get started</button>
-        </div>
-        <div class="social">
-            <div class="social__item"><i class="fab fa-twitter"></i></div>
-            <div class="social__item"><i class="fab fa-flickr"></i></div>
-            <div class="social__item"><i class="fab fa-dribbble"></i></div>
-        </div>
-    </header>
-    <section class="container section--grey">
-        <div class="row">
-            <div class="col col-lg-6">
-                <h2 class="section__header">
-                    Represent your life with a simple photo
-                </h2>
-                <p class="section__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+    <div class="container">
+        <header class="header d-flex flex-column justify-content-between align-items-center">
+            <nav class="main-nav">
+                <ul class="main-nav__list d-flex flex-column flex-lg-row align-items-center">
+                    <li class="main-nav__item d-lg-inline order-lg-1"><img src="images/logo.png" alt="logo"></li>
+                    <li class="main-nav__item d-lg-inline"><a href="#" class="main-nav__link">Home</a></li>
+                    <li class="main-nav__item d-lg-inline"><a href="#" class="main-nav__link">PhotoApp</a></li>
+                    <li class="main-nav__item d-lg-inline order-lg-2"><a href="#" class="main-nav__link">Design</a></li>
+                    <li class="main-nav__item d-lg-inline order-lg-2"><a href="#" class="main-nav__link">Download</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <h1 class="hero__title">Your life, a photo</h1>
+                <h3 class="hero__subtitle">print your life in a simple photo</h3>
                 <button class="button">Get started</button>
             </div>
-            <div class="d-none d-lg-block col-lg-6">
-                <img src="images/phone1.png" alt="phone">
+            <div class="social">
+                <div class="social__item"><a href="#"><i class="fab fa-twitter"></i></a></div>
+                <div class="social__item"><a href="#"><i class="fab fa-flickr"></i></a></div>
+                <div class="social__item"><a href="#"><i class="fab fa-dribbble"></i></a></div>
             </div>
-        </div>
-    </section>
-    <section class="container section">
-        <div class="row">
-            <div class="d-none d-lg-block col-lg-6">
-                    <img src="images/phone2.png" alt="phone">
+        </header>
+        <section class="section--grey">
+            <div class="row">
+                <div class="col col-lg-6">
+                    <h2 class="section__header">
+                        Represent your life with a simple photo
+                    </h2>
+                    <p class="section__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <button class="button">Get started</button>
+                </div>
+                <div class="d-none d-lg-block col-lg-6">
+                    <img src="images/phone1.png" alt="phone">
+                </div>
             </div>
-            <div class="col col-lg-6">
-                <h2 class="section__header">
-                    Design
-                </h2>
-                <p class="section__tezt">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <button class="button">Learn more</button>
-                <div class="arrows">
-                    <div class="arrows__label"><span>1</span> / <span>5</span></div>
-                    <div>
+        </section>
+        <section class="section">
+            <div class="row">
+                <div class="d-none d-lg-block col-lg-6">
+                        <img src="images/phone2.png" alt="phone">
+                </div>
+                <div class="col col-lg-6">
+                    <h2 class="section__header">
+                        Design
+                    </h2>
+                    <p class="section__tezt">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <button class="button">Learn more</button>
+                    <div class="arrows">
+                        <div class="arrows__label"><span>1</span> / <span>5</span></div>
+                        <div>
+                            <ul class="arrows__list">
+                                <li class="arrows__item">
+                                    <a href="#" class="arrows__link"><i class="fas fa-angle-left"></i></a>
+                                </li>
+                                <li class="arrows__item">
+                                    <a href="" class="arrows__link"><i class="fas fa-angle-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="community">
+            <div class="row">
+                <div class="col col-lg-4">
+                    <img src="images/logo-grenn.png" alt="logo">
+                    <h2 class="community__header">
+                        Our community
+                    </h2>
+                    <p class="community__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="col col-lg-8">
+                    <div class="arrows">
                         <ul class="arrows__list">
                             <li class="arrows__item">
                                 <a href="#" class="arrows__link"><i class="fas fa-angle-left"></i></a>
@@ -71,78 +98,53 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container community">
-        <div class="row">
-            <div class="col col-lg-4">
-                <img src="images/logo-grenn.png" alt="logo">
-                <h2 class="community__header">
-                    Our community
-                </h2>
-                <p class="community__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </div>
-            <div class="col col-lg-8">
-                <div class="arrows">
-                    <ul class="arrows__list">
-                        <li class="arrows__item">
-                            <a href="#" class="arrows__link"><i class="fas fa-angle-left"></i></a>
-                        </li>
-                        <li class="arrows__item">
-                            <a href="" class="arrows__link"><i class="fas fa-angle-right"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="row gallery">
-                    <div class="col col-lg-6">
-                        <img src="images/car.png" alt="car">
-                    </div>
-                    <div class="col col-lg-6">
-                        <img src="leaves.png" alt="leaves">
+                    <div class="row gallery">
+                        <div class="col col-lg-6">
+                            <img src="images/car.png" alt="car">
+                        </div>
+                        <div class="col col-lg-6">
+                            <img src="leaves.png" alt="leaves">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="container subscribe">
-        <h2 class="subscribe__title">
-            Subscribe to us community
-        </h2>
-        <input class="subscribe__form" type="text">
-        <button class="subscribe__button"><i class="fas fa-check"></i></button>
-    </section>
-    <section class="container download">
-        <h2 class="download__header">
-            Download it
-        </h2>
-        <p class="download__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <button class="button--app">Apple Store <i class="fab fa-apple"></i></button>
-        <button class="button--app">Play Store <i class="fab fa-android"></i></button>
-    </section>
-    <footer class="container footer">
-        <div class="row">
-            <div class="col col-md6">
-                <div class="footer-menu">
-                    <ul class="footer-menu__list">
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Credits</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Privacy</a></li>
-                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Our teams</a></li>    
-                    </ul>
+        </section>
+        <section class="subscribe">
+            <h2 class="subscribe__title">
+                Subscribe to us community
+            </h2>
+            <input class="subscribe__form" type="text">
+            <button class="subscribe__button"><i class="fas fa-check"></i></button>
+        </section>
+        <section class="download">
+            <h2 class="download__header">
+                Download it
+            </h2>
+            <p class="download__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <button class="button--app">Apple Store <i class="fab fa-apple"></i></button>
+            <button class="button--app">Play Store <i class="fab fa-android"></i></button>
+        </section>
+        <footer class="footer">
+            <div class="row">
+                <div class="col col-md6">
+                    <div class="footer-menu">
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Credits</a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Privacy</a></li>
+                            <li class="footer-menu__item"><a href="#" class="footer-menu__link">Our teams</a></li>    
+                        </ul>
+                    </div>
+                    <p class="footer__text">
+                        Copyright by phototime - all rights reserved
+                    </p>
                 </div>
-                <p class="footer__text">
-                    Copyright by phototime - all rights reserved
-                </p>
+                <div class="col col-md-6">
+                    <img src="images/logo-green.png" alt="logo">
+                </div>
             </div>
-            <div class="col col-md-6">
-                <img src="images/logo-green.png" alt="logo">
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
