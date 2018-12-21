@@ -25,6 +25,7 @@ body {
     height: 100%;
 }
 .button {
+    box-sizing: border-box;
     background-color: $btn-color;
     border: none;
     border-radius: 3px;
@@ -40,6 +41,14 @@ body {
     &:active,
     &:focus {
         outline: none;
+    }
+    &--app {
+        border: 0;
+        background-color: #1abc9c;
+        font-size: 16px;
+        letter-spacing: 2.4px;
+        line-height: 56px;
+        margin: 0 13px;
     }
 }
 .header {
@@ -131,6 +140,135 @@ body {
         font-size: 20px;
         &:first-child {
             margin-right: 16px;
+        }
+    }
+}
+.community {
+    background-color: $bg-color-lightgrey;
+    color: $text-color-darkgrey;
+
+    &__content,
+    &__gallery {
+        padding: 0;
+        margin: 120px 0;
+    }
+    &__content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__header {
+        margin: 0;
+        margin-top: 21px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;  
+    }
+    &__text {
+        max-width: 150px;
+        margin: 24px auto 0 auto;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 1.5px;  
+    }
+    &__gallery img {
+        max-width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+}
+.subscribe {
+    @include background-img-full-width(url(../images/subscribe.jpg));
+    height: 100vh;
+    max-height: 790px;
+    text-align: center;
+    &__title {
+        color: $text-color-white;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3.6px;
+    }
+    &__form,
+    &__button
+     {
+        margin: 0;
+        padding: 0;
+        height: 60px;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+    }
+    &__form-group {
+        display: flex;
+        justify-content: center;
+    }
+    &__form {
+        padding: 0 20px;
+        max-width: 280px;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+        border-radius: 3px 0 0 3px;
+    }
+    &__button {
+        width: 63px;
+        height: 60px;
+        border-radius: 0 3px 3px 0;
+        background-color: $btn-color;
+        cursor: pointer;
+        & i {
+            color: $text-color-white;
+            font-size: 16px;
+
+        }
+    }
+}
+.download {
+    background-color: $bg-color-lightgrey;
+    color: $text-color-darkgrey;
+    text-align: center;
+    padding: 90px 0 116px 0;
+    &__header {
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    &__text {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;        
+    }
+}
+.footer {
+    background-color: $bg-color-white;
+    padding: 45px 0 35px 0;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.1px;     
+    &-menu {
+        &__item {
+            display: inline-block;
+            padding: 0 12px;
+            &:first-of-type {
+                border-right: 1px solid $text-color-green;
+                padding-left: 0;
+            }
+            &:last-of-type {
+                border-left: 1px solid $text-color-green;
+                padding-right: 0;            
+            }
+        }
+        &__link {
+            text-transform: uppercase;
         }
     }
 }
