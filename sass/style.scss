@@ -1,23 +1,28 @@
 @import "../node_modules/normalize-scss/sass/normalize/import-now";
 @import "../node_modules/bootstrap/scss/bootstrap-grid";
 
+@import 'reset';
 @import 'colors';
 @import 'fonts';
 @import 'mixins';
+
 
 * {
     font-family: $primary-font;
 }
 body {
     background-color: darken($lightgrey, 10%);
+    
 }
-a {
-    text-decoration: none;
-    color: inherit;
-}
-.container {
+.page-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
     padding: 0;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+}
+.container,
+.row {
+    height: 100%;
 }
 .button {
     background-color: $btn-color;
@@ -48,12 +53,12 @@ a {
 .main-nav {
     color: $white;
     &__list {
-        list-style-type: none;
         padding: 0;
         margin: 0;
+        margin-top: 40px;
     }
     &__item {
-        margin: 5px 35px;  
+        margin: 5px 35px;
     }
     &__link {
         font-size: 16px;
@@ -83,5 +88,49 @@ a {
     &__item {
         display: inline-block;
         margin: 26px 8px;
+    }
+}
+.section {
+    background-color: $bg-color-white;
+    &--grey {
+        background-color: $bg-color-lightgrey;
+    }
+    color: $darkgrey;
+    padding: 120px 0 90px 0;
+    &__header {
+        color: $text-color-green;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.7px;
+        margin: 0;
+    }
+    &__text {
+        color: $text-color-darkgrey;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1.8px;
+        margin: 50px 0;
+        &--bold {
+            font-weight: 700;
+        } 
+    }
+}
+.arrows {
+    &__label {
+        margin-top: 45px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 1.8px;   
+    }
+    &__item {
+        display: inline-block;
+    }
+    &__link {
+        font-size: 20px;
+        &:first-child {
+            margin-right: 16px;
+        }
     }
 }
