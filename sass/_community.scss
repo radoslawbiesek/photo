@@ -1,0 +1,40 @@
+.community {
+    background-color: $bg-color-lightgrey;
+    color: $text-color-darkgrey;
+    padding: 100px 0;
+    &__content,
+    &__gallery {
+        padding: 0;
+        margin: 20px 0;
+    }
+    &__content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__header {
+        margin: 0;
+        margin-top: 21px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;  
+    }
+    &__text {
+        max-width: 150px;
+        margin: 24px auto 0 auto;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 1.5px;  
+    }
+    &__gallery {
+        & img {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.arrows {
+    &__label {
+        margin-top: 45px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 1.8px;   
+    }
+    &__item {
+        display: inline-block;
+    }
+    &__link {
+        font-size: 20px;
+        &:first-child {
+            margin-right: 16px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.footer {
+    background-color: $bg-color-white;
+    padding: 45px 0 35px 0;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.1px;     
+    &-menu {
+        &__item {
+            display: inline-block;
+            padding: 0 12px;
+            &:first-of-type {
+                border-right: 1px solid $text-color-green;
+                padding-left: 0;
+            }
+            &:last-of-type {
+                border-left: 1px solid $text-color-green;
+                padding-right: 0;            
+            }
+        }
+        &__link {
+            text-transform: uppercase;
+            transition: 0.1s ease-in-out;
+            &:hover {
+                color: $text-color-green;
+            }
+        }
+    }
+}
